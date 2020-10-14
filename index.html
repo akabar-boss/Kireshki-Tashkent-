@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Кириешки Ташкент</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script>
+        let click = document.querySelector('.click');
+        let demo = document.querySelector('.demo');
+        click.addEventListener('click', function (e) {
+            e.preventDefault();
+            if (!this.classList.contains('active')) {
+                this.classList.add('active');
+                this.nextElementSibling.style.display = 'block'
+            } else if (this.classList.contains('active')) {
+                this.classList.remove('active');
+                this.nextElementSibling.style.display = 'none'
+            }
+
+        })
+    </script>
+</head>
+
+<body>
+    <nav class="nav">
+        <header class="header">
+            <p>Новый Вкус</p>
+            <h1>Кириешки "Toshkent"</h1>
+        </header>
+    </nav>
+    <main class="main">
+        <div class="left">
+            <div class="logo logo-1">
+                <img style="border:1px solid #e6e6e6 ;" src="../app/img/toshkent.jpg" alt="">
+                <div class="text">
+                    <p1 style="font-size: 18px; color: #1f3750;">Со вкусом перца <br>
+                        Очень острый <br></p1>
+                    <p2 style="font-size: 16px; color: #96a6b7; ">lorem ipsum dolor sit amet, <br> consectetur
+                        adipisicing elit, sed do <br> eiusmod tempor incididunt ut labore <br> et
+                        dolore magna aliqua. Ut enim ad <br> minim veniam, quis nostrud </p2><br>
+                    <div class="link"> <a href="#!">Купить</a></div>
+                </div>
+            </div>
+            <div class="logo logo-2">
+                <img style="border:1px solid #e6e6e6 ;" src="../app/img/toshkent.jpg" alt="">
+                <div class="text">
+                    <p1 style="font-size: 18px; color: #1f3750;">Со вкусом перца <br>
+                        Очень острый <br></p1>
+                    <p2 style="font-size: 16px; color: #96a6b7; ">lorem ipsum dolor sit amet, <br> consectetur
+                        adipisicing elit, sed do <br> eiusmod tempor incididunt ut labore <br> et
+                        dolore magna aliqua. Ut enim ad <br> minim veniam, quis nostrud </p2><br>
+                    <div class="link"> <a href="#!">Купить</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="logo logo-3">
+                <img style="border:1px solid #e6e6e6 ;" src="../app/img/toshkent.jpg" alt="">
+                <div class="text">
+                    <p1 style="font-size: 18px; color: #1f3750;">Со вкусом перца <br>
+                        Очень острый <br></p1>
+                    <p2 style="font-size: 16px; color: #96a6b7; ">lorem ipsum dolor sit amet, <br> consectetur
+                        adipisicing elit, sed do <br> eiusmod tempor incididunt ut labore <br> et
+                        dolore magna aliqua. Ut enim ad <br> minim veniam, quis nostrud </p2><br>
+                    <div class="link"> <a href="#!">Купить</a></div>
+                </div>
+            </div>
+            <div class="logo logo-4">
+                <img style="border:1px solid #e6e6e6 ;" src="../app/img/toshkent.jpg" alt="">
+                <div class="text">
+                    <p1 style="font-size: 18px; color: #1f3750;">Со вкусом перца <br>
+                        Очень острый <br></p1>
+                    <p2 style="font-size: 16px; color: #96a6b7; ">lorem ipsum dolor sit amet, <br> consectetur
+                        adipisicing elit, sed do <br> eiusmod tempor incididunt ut labore <br> et
+                        dolore magna aliqua. Ut enim ad <br> minim veniam, quis nostrud </p2><br>
+                    <div class="link"> <a href="#!">Купить</a></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <main class="content">
+        <div class="fruit" style="margin-left: 24px;">
+            <h3>Article title lorem ipsum <br> dolor set amet.</h3>
+            <img src="../app/img/toshkent (1).jpg" alt="">
+            <p class="fruit__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut</p>
+            <a href="#!" class="click"><p class="fruit__click"> Подробнее</p></a>
+            <p class="demo ">enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+                quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+                nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+            </p>
+
+
+        </div>
+        <div class="fruit fruit__link" >
+            <h3>Article title lorem ipsum <br> dolor set amet.</h3>
+            <img src="../app/img/toshkent (2).jpg" alt="">
+            <p class="fruit__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut</p>
+            <a href="#!" class="click"><p class="fruit__click"> Подробнее</p></a>
+            <p class="demo ">enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+                quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+                nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+            </p>
+
+
+        </div>
+        <div class="fruit fruit__link" >
+            <h3>Article title lorem ipsum <br> dolor set amet.</h3>
+            <img src="../app/img/toshkent (3).jpg" alt="">
+            <p class="fruit__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut</p>
+            <a href="#!" class="click"><p class="fruit__click"> Подробнее</p></a>
+            <p class="demo ">enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+                quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+                nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+            </p>
+
+
+        </div>
+        <div class="fruit fruit__link" >
+            <h3>Article title lorem ipsum <br> dolor set amet.</h3>
+            <img src="../app/img/toshkent (4).jpg" alt="">
+            <p class="fruit__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut</p>
+            <a href="#!" class="click"><p class="fruit__click"> Подробнее</p></a>
+            <p class="demo ">enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+                quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+                nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+            </p>
+
+
+        </div>
+    </main>
+<p class="text__link">Торговые представители в регионах</p>
+<footer class="footer">
+<div class="text__left">
+  <h1> <a href="#!">Торговые представители в Ташкенте</a></h1> 
+  <h1>  <a href="#!">Торговые представители в Самарканде</a></h1>  
+  <h1>   <a href="#!">Торговые представители в  Навои</a></h1> 
+  <h1>   <a href="#!">Торговые представители в Бухаре</a></h1> 
+  <h1>   <a href="#!">Торговые представители в Ташкентской области</a></h1> 
+  <h1>  <a href="#!">Торговые представители в Нукусе</a></h1> 
+  <h1> <a href="#!">Торговые представители в Хорезме</a></h1>  
+    
+</div>
+<div class="text__right">
+    <h1> <a href="#!">Торговые представители в Ташкенте</a></h1> 
+  <h1>  <a href="#!">Торговые представители в Самарканде</a></h1>  
+  <h1>   <a href="#!">Торговые представители в  Навои</a></h1> 
+  <h1>   <a href="#!">Торговые представители в Бухаре</a></h1> 
+  <h1>   <a href="#!">Торговые представители в Ташкентской области</a></h1> 
+  <h1>  <a href="#!">Торговые представители в Нукусе</a></h1> 
+  <h1> <a href="#!">Торговые представители в Хорезме</a></h1> 
+    
+</div>
+</footer>
+
+<footer class="end">
+    <div class="section">
+    Кириешки Ташкент
+</div>
+    <ul class="div">
+  <li> <a  href="#!">Натуральная продукция</a></li> 
+  <li> <a  href="#!">Примеры питания </a></li> 
+  <li> <a  href="#!">Доставка и оплата</a></li> 
+  <li> <a href="#!">Контакты</a></li> 
+    </ul>
+</footer>
+</body>
+
+</html>
